@@ -2,7 +2,7 @@
 
 ## General Information
 1. This is an encryption scheme to send and receive data securely. We built it with post-quantum security in mind.
-2. We use ML-KEM for asymmetric key exchange, ML-DSA for asymmetric digital signature authentication, AES256-CTR for symmetric encryption, and HMAC-SHA256 for symmetric authentication.
+2. We use ML-KEM for asymmetric shared key establishment, ML-DSA for asymmetric digital signature authentication, AES256-CTR for symmetric encryption, and HMAC-SHA256 for symmetric authentication.
 3. These algorithms were chosen to stay above an effective key size of 80 bits, providing resistance to Shor's algorithm and Grover's algorithm.
 4. After 20 messages have been sent, a new shared secret key will be established, mimicking ephemeral key usage.
 5. We use a cryptographic HMAC ratchet to have both the sender and receiver generate 20 random HMAC keys at a time, never using the same HMAC key twice. Once the ratchet depletes of HMAC keys, a new ratchet of 20 HMAC keys is generated.
@@ -36,4 +36,5 @@
  - Nicholas Golparvar
  - Terry Weatherman
  - Alex Stacey 
+
 
