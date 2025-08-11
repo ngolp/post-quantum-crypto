@@ -24,11 +24,11 @@
 
 <img width="1310" height="323" alt="image" src="https://github.com/user-attachments/assets/79d61d9e-1c52-451e-bf27-0a4dd36a7cb8" />
 
-6. With a shared secret key established, we then move into symmetric cryptography with AES256-CTR and HMAC-SHA256 to encrypt, decrypt, and verify messages.
+5. With a shared secret key established, we then move into symmetric cryptography with AES256-CTR and HMAC-SHA256 to encrypt, decrypt, and verify messages.
 
 <img width="843" height="214" alt="image" src="https://github.com/user-attachments/assets/20822846-ccaa-4386-9e05-510c6cedd647" />
 
-7. After 20 messages have been sent, the program establishes a new shared secret key with ML-KEM and ML-DSA. Additionally, the HMAC ratchet is depleted of HMAC keys, and the program generates a new ratchet of 20 HMAC keys.
+6. After 20 messages have been sent, the program establishes a new shared secret key with ML-KEM and ML-DSA. Additionally, the HMAC ratchet is depleted of HMAC keys, and the program generates a new ratchet of 20 HMAC keys.
 
 <img width="630" height="306" alt="image" src="https://github.com/user-attachments/assets/19587a0e-c39b-4eeb-9f83-cd2f42df7412" />
 
@@ -36,3 +36,4 @@
  - Nicholas Golparvar
  - Terry Weatherman
  - Alex Stacey 
+
